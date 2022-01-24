@@ -31,11 +31,6 @@ public class linklist{
             return;
         }
         Node temp = head;
-        int k = 2;
-        while(k>0){
-            temp = temp.next;
-            k--;
-        }
         while(temp!=null){
             System.out.println(temp.data);
             temp = temp.next;
@@ -59,7 +54,27 @@ public class linklist{
             temp = prev.next;
             temp.next = cur;
             return head;
+    }
+    public Node deleteElement(Node head,int k){
+        if(head == null){
+            System.out.println("Empty");
+            return null;
         }
+        if(head.data == k){
+            Node temp = head.next;
+            head = temp;
+        }
+        else{
+            for(Node temp = head;temp.next!=null;temp.next=temp.next){
+                if(temp.next.data == k){
+                    Node temp1 = temp.next;
+                    temp.next = temp1.next;
+                }
+            }
+        }
+        return head;
+    }
+    
     public static void main(String[] args) {
         linklist list = new linklist();
 
@@ -67,6 +82,7 @@ public class linklist{
         list.addNode(2);
         list.addNode(3);
         list.addNode(4);
+        // list.deleteElement(head, 1);
         list.addNode(5);
 
         list.addElement(head, 2, 3);
