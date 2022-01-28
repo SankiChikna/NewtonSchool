@@ -57,8 +57,9 @@ public class middleNode {
         list.myAdd(6);
         list.myAdd(7);
         list.myAdd(8);
+        list.myAdd(9);
 
         list.midNode();
-        // list.print();
+        list.print();
     }
 }

@@ -17,7 +17,7 @@ public class linklist{
         }
         else{
             Node temp = head;
-            for(;temp!=null;temp=temp.next){
+            for(;temp.next!=null;temp=temp.next){
                 if(temp.next==null){
                     temp.next = newNode;
                     return;
@@ -28,6 +28,7 @@ public class linklist{
 
     public void display(){
         if(head == null){
+            System.out.println("Empty");
             return;
         }
         Node temp = head;
@@ -55,6 +56,7 @@ public class linklist{
             temp.next = cur;
             return head;
     }
+
     public Node deleteElement(Node head,int k){
         if(head == null){
             System.out.println("Empty");
@@ -85,7 +87,7 @@ public class linklist{
         // list.deleteElement(head, 1);
         list.addNode(5);
 
-        list.addElement(head, 2, 3);
+        // list.addElement(head, 2, 3);
         list.display();
     }
 

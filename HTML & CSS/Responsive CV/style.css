@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    /* height: 1000px;
+     */
+    width: 90%;
+     min-height: 1000px;
+}
+
+.left-content{
+    color: red;
+    height: 1000px;
+    /* width: 300px; */
+}
+
+.right-content{
+    color: blue;
+    height: 1000px;
+    /* width: 700px; */
+}
