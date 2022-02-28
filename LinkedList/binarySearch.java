@@ -4,7 +4,7 @@ public class binarySearch {
     public static void main(String[] args) {
         int arr[] = {3,1,5,1,6,2,7,9};
         Arrays.sort(arr);
-        System.out.println(find(arr,10,0,arr.length-1));
+        System.out.println(find(arr,9,0,arr.length-1));
     }
 
     static boolean find(int arr[],int num,int l,int h){

@@ -34,7 +34,7 @@ public class mergesort{
         int k=start;
 
         while(i<n1 && j<n2){
-            if(arr1[i]<arr2[j])
+            if(arr1[i]>arr2[j])
                 arr[k] = arr1[i++];
             else
                 arr[k] = arr2[j++];
